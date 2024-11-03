@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Doe's Website</title>
+
+  <!-- My Own Styles-->
+  <link rel="stylesheet" href="assets\styles\style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="jumbotron">
+      <h1>John Doe</h1>
+      <p>Aspiring BackENd programmer!</p>
+    </div>
+
+    <nav>
+      <div class="nav-container">
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <button id="themeButton" class="theme-toggle">Toggle Dark Mode</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="about-me" class="demo-section card">
+      <article>
+        <h2 id="about-me">About Me</h2>
+        <img src="assets\image\about-me.jpeg" alt="About Me" class="featured-image" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Suspendisse turpis eros, sagittis pulvinar nisl eu, sodales efficitur ex. 
+          Fusce nisl diam, placerat sed lectus sed, auctor lobortis eros. 
+          Donec consequat vestibulum nisl in vehicula. Nam accumsan libero quam. 
+        </p>
+
+        <p>
+          Suspendisse venenatis pharetra nulla, id mollis augue consequat a. 
+          Nullam iaculis tristique ex. Aliquam at lectus eget felis elementum consectetur a ac augue. 
+          Quisque lacus odio, vulputate nec luctus sit amet, bibendum eget ante. 
+          In mattis gravida velit, sed suscipit mi convallis quis. 
+        </p>
+
+        <p>
+          Duis mollis est ligula, id vestibulum neque posuere cursus. 
+          Etiam quam nisi, porta maximus laoreet sit amet, faucibus vel mi. 
+          Donec eget nunc commodo, efficitur nunc ut, accumsan velit. Cras eu finibus dui.
+        </p>
+      </article>
+    </div>
+
+    <div class="demo-section card" id="projects">
+      <h2>Projects</h2>
+
+      <div id="filterButtons">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="web">Web Development</button>
+        <button class="filter-btn" data-category="cloud">Cloud Computing</button>
+        <button class="filter-btn" data-category="leadership">Leadership</button>
+      </div>
+
+      <div id="projectsList">
+        <div class="project-card" data-category="leadership">
+          <h3>Google Developer Solution Challenge (GDSC) 2025</h3>
+          <p>International development competition to solve UN SGDs</p>
+          <small>Category: Leadership, Innovation</small>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <h3>ReviewSense</h3>
+          <p>Automated product data analysis platform</p>
+          <small>Category: Web Development</small>
+        </div>
+
+        <div class="project-card" data-category="cloud">
+          <h3>Cloud Storage Solution</h3>
+          <p>AWS-based file storage system</p>
+          <small>Category: Cloud Computing</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-section card" id="faq">
+      <h2>Frequently Ask Questions (FAQ)</h2>
+
+      <div id="faqSection">
+        <div class="faq-item">
+          <div class="faq-question">What technologies do you work with?</div>
+          <div class="faq-answer">
+            I work with cloud computing platforms like AWS and Google Cloud, as well as backend technologies including
+            Node.js and Python. I'm also experienced with web development using HTML, CSS, and JavaScript.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Are you available for freelance work?</div>
+          <div class="faq-answer">
+            Yes, I'm open to freelance opportunities, particularly in cloud computing and backend development projects.
+            Feel free to contact me to discuss potential collaborations.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">What was your role in GDSC 2025?</div>
+          <div class="faq-answer">
+            As team leader at GDSC 2025, I led our group in developing a sustainable startup concept, managing project
+            timelines, and presenting our solution to an international panel of judges.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact me on johndoe@contact.com</p>
+  </footer>
+</body>
+
+</html>

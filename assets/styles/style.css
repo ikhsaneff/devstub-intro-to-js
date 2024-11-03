@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #030fb1;
+  text-align: center;
+  font-weight: bold;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 4rem;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #030fb1;
+  text-align: center;
+  color: white;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #030fb1;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+main {
+  padding: 20px;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.demo-section {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #030fb1;
+  border-radius: 5px;
+}
+
+.theme-toggle {
+  background-color: #000875;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.theme-toggle:hover {
+  background-color: #000657;
+}
+
+.filter-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: #030fb1;
+  color: white;
+}
+
+.project-card {
+  border: 1px solid #030fb1;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: block;
+}
+
+.project-card.hidden {
+  display: none;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  color: black;
+  background-color: #f5f5f5;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+}
+
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-answer.show {
+  max-height: 200px;
+  padding: 15px;
+}
