@@ -6,39 +6,18 @@
 // CLUE: You need two things to start:
 // 1. Reference to the theme toggle button (id: 'themeButton')
 // 2. A variable to track the current theme state
-// Write your code here...
-const themeButton = document.getElementById('themeButton');
-let isDark = false; 
 
 
 // STEP 2: Add Click Event
 // CLUE: Add a click event listener to the button
 // The function will handle switching between themes
+
+
 // STEP 3: Inside the click handler:
+
 // CLUE A: Toggle the Theme State
 // HINT: Flip the boolean value of the theme state
 // HINT: Use the NOT operator (!)
-// Write your code here...
-themeButton.addEventListener('click',
-  function() {
-    isDark = !isDark
-    if (isDark) {
-      document.body.style.backgroundColor = 'black';
-      document.body.style.color = 'white';
-
-      themeButton.textContent = 'Toggle Light Mode';
-    } else {
-      document.body.style.backgroundColor = 'white';
-      document.body.style.color = 'black';
-
-      themeButton.textContent = 'Toggle Dark Mode';
-    }
-  }
-
-);
-
-
-
 
 
 // CLUE B: Apply Theme Changes
@@ -79,3 +58,5 @@ Tips:
 - Test the toggle multiple times to ensure it switches correctly
 - Make sure the theme state variable (isDark) stays in sync with the visual changes
 */
+
+// Write your code below...

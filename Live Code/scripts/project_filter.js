@@ -7,44 +7,21 @@
 // 1. All the filter buttons (class: 'filter-btn')
 // 2. All the project cards (class: 'project-card')
 // HINT: Use querySelectorAll to select multiple elements
-// Write your code here...
-const filterButtons = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
+
 
 // STEP 2: Add Click Events to Buttons
 // CLUE: Loop through all filter buttons using forEach
 // Add a click event listener to each button
-// Write your code here...
-filterButtons.forEach(button => {
-   button.addEventListener('click',
-      function() {
-         filterButtons.forEach(btn => btn.classList.remove('active'));
-         button.classList.add('active');
 
-         const category = button.getAttribute('data-category');
-
-         projectCards.forEach(card => {
-            if(category === "all" || card.getAttribute('data-category') === category) {
-               card.classList.remove('hidden');
-            } else {
-               card.classList.add('hidden');
-            }
-         });
-      }
-   );
-});
 
 // STEP 3: Inside the click event handler:
+
 // CLUE A: Update Button Styles
 // HINT: First, remove 'active' class from all buttons
 // HINT: Then add 'active' class to the clicked button
-// Write your code here...
-
 
 // CLUE B: Get the Category
 // HINT: Use getAttribute to get 'data-category' from the clicked button
-// Write your code here...
-
 
 // CLUE C: Filter the Projects
 // HINT: Loop through all project cards
@@ -52,8 +29,6 @@ filterButtons.forEach(button => {
 //       - category is 'all' OR
 //       - card's data-category matches the selected category
 // HINT: Use classList.add('hidden') or classList.remove('hidden')
-// Write your code here...
-
 
 /* 
 Expected Behavior:
@@ -78,3 +53,5 @@ Tips:
 - Remember to handle the 'all' category as a special case
 - Test each category to make sure projects show/hide correctly
 */
+
+// Write your code below...
