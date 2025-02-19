@@ -8,13 +8,31 @@
 // 2. All the project cards (class: 'project-card')
 // HINT: Use querySelectorAll to select multiple elements
 // Write your code here...
-
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
 
 // STEP 2: Add Click Events to Buttons
 // CLUE: Loop through all filter buttons using forEach
 // Add a click event listener to each button
 // Write your code here...
+filterButtons.forEach(button => {
+   button.addEventListener('click',
+      function() {
+         filterButtons.forEach(btn => btn.classList.remove('active'));
+         button.classList.add('active');
 
+         const category = button.getAttribute('data-category');
+
+         projectCards.forEach(card => {
+            if(category === "all" || card.getAttribute('data-category') === category) {
+               card.classList.remove('hidden');
+            } else {
+               card.classList.add('hidden');
+            }
+         });
+      }
+   );
+});
 
 // STEP 3: Inside the click event handler:
 // CLUE A: Update Button Styles

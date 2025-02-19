@@ -49,3 +49,24 @@ Tips:
 - Use nextElementSibling to find the answer div
 - The CSS is already set up for you!
 */
+
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(question => {
+    question.addEventListener('click', function() {
+        // Toggle active class on question
+        question.classList.toggle('active');
+        
+        // Toggle show class on answer
+        const answer = question.nextElementSibling;
+        answer.classList.toggle('show');
+        
+        // Optional: Close other open FAQs
+        faqQuestions.forEach(q => {
+            if (q !== question) {
+                q.classList.remove('active');
+                q.nextElementSibling.classList.remove('show');
+            }
+        });
+    });
+});
