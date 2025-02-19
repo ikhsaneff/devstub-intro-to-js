@@ -1,15 +1,16 @@
 // Event Listeners
-button.addEventListener('click', function() {
-    console.log("Button clicked!");
-});
-
-// Multiple Events
-const handleHover = () => {
+element.addEventListener('mouseover', () => {
     console.log("Mouse over!");
-};
-
-element.addEventListener('mouseover', handleHover);
+});
 element.addEventListener('mouseout', () => {
     console.log("Mouse out!");
 });
+
+// Function to log mouse click
+mouseClick = () => {
+    console.log("Mouse clicked!");
+}
+
+button.addEventListener('click', mouseClick);
+
 

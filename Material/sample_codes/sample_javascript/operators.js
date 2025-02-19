@@ -3,7 +3,7 @@ let sum = 5 + 3;    // Addition
 let diff = 10 - 5;  // Subtraction
 let prod = 4 * 2;   // Multiplication
 let quot = 15 / 3;  // Division
-let mod = 17 % 2;  // Modulus
+let mod = 17 % 3;  // Modulus
 
 // Comparison
 let isEqual = 5 === 5;    // true

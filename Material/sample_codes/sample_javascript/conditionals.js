@@ -9,6 +9,9 @@ if (input >= 18) {
     console.log("Child");
 }
 
+// Ternary Operator (Short If)
+const ageStatus = age >= 18 ? "Adult" : "Minor";
+
 // Switch Statement
 switch (input) {
     case "Monday":
@@ -21,8 +24,6 @@ switch (input) {
         console.log("Regular day");
 }
 
-// Ternary Operator (Short If)
-const ageStatus = age >= 18 ? "Adult" : "Minor";
 
 console.log(ageStatus)
 

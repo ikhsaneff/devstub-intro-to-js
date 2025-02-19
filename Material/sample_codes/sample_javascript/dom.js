@@ -1,15 +1,15 @@
 // DOM Selection
 // By ID (returns single element)
-document.getElementById('myId');
+document.getElementById('idName');
 
 // By Class (returns collection)
-document.getElementsByClassName('myClass');
+document.getElementsByClassName('className');
 
 // By CSS selector (returns first match)
-document.querySelector('.class');
+document.querySelector('.className');
 
 // By CSS selector (returns all matches)
-document.querySelectorAll('.class');
+document.querySelectorAll('.className');
 
 // DOM Manipulation
 // Changing Content

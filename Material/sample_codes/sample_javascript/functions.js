@@ -1,20 +1,19 @@
 // Function Declaration
-function greet(name) {
-    return `Hello, ${name}!`;
+function functionName(input) {
+    let output = 'Hello,' + input + '!';
+    return output;
 }
 
 // Arrow Function (Modern Syntax)
-const greet = (name) => {
-    return `Hello, ${name}!`;
+const functionName = (input) => {
+    let output = 'Hello,' + input + '!';
+    return output;
 };
 
 // One-liner arrow function
-const greet = (name) => `Hello, ${name}!`;
+const functionName = (input) => `Hello, ${input}!`;
 
 // Function Usage
-greet("John"); // Returns: "Hello, John!"
-
-
-let returnValue = greet("John"); // Store the return value inside variable
-console.log(returnValue);
+let functionOutput = functionName("John");
+console.log(functionOutput);
 
