@@ -4,21 +4,25 @@
 
 // STEP 1: Select Elements
 // CLUE: Use querySelectorAll to select all CSS elements with class 'faq-question'
+// Write your code here...
 
 
 // STEP 2: Add Click Events
 // CLUE: Loop through all questions using forEach
 // For each question, add a click event listener
+// Write your code here...
 
 
 // STEP 3: Inside the click event handler:
 // CLUE A: Toggle the 'active' class on the clicked question
+// Write your code here...
 
 
 // CLUE B: Find and toggle the answer
 // HINT: The answer is the next element after the question
 // HINT: Use nextElementSibling to find it (e.g. currentQuestion.nextElementSibling)
 // HINT: Toggle the 'show' class on the answer
+// Write your code here...
 
 
 // BONUS CHALLENGE: Close Other Questions
@@ -26,6 +30,7 @@
 // HINT: Check if the question is NOT the one that was clicked (q !== this)
 // HINT: Remove 'active' class from other questions
 // HINT: Remove 'show' class from their answers
+// Write your code here...
 
 
 /* 
@@ -45,4 +50,12 @@ Tips:
 - The CSS is already set up for you!
 */
 
-// Write your code below...
+let faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        question.classList.toggle('active');
+        let answer = question.nextElementSibling;
+        answer.classList.toggle('show');
+    });         
+});    
